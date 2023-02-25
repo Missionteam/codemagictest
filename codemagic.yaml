@@ -62,12 +62,18 @@ workflows:
       xcode: latest
       cocoapods: default
     scripts:
+      - name: where am I
+        script: |
+          pwd
+       - name: ls
+        script: |
+          ls
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles
       - name: Get Flutter packages
         script: |
-          flutter packages pub get
+          flutter pub get
       - name: Install pods
         script: |
           find . -name "Podfile" -execdir pod install \;
