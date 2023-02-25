@@ -55,9 +55,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: io.codemagic.flutteryaml
+        bundle_identifier: com.missionyr.tworoom
       vars:
-        APP_ID: 1111111111 # <-- Put your APP ID here
+        APP_ID: XLPUJ3AR9R # <-- Put your APP ID here
       flutter: stable
       xcode: latest
       cocoapods: default
